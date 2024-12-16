@@ -29,6 +29,11 @@ Navigate to the backend folder and install dependencies:
 cd backend
 npm install
 
+###  Database (MySQL)
+Create a database
+Use .env file to store database keys
+Add the env file in server.js
+
 ## Frontend (React)
 In a separate terminal window, navigate to the frontend folder and install dependencies:
 cd frontend
