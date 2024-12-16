@@ -3,12 +3,6 @@ const router = express.Router();
 const db = require("../server");
 router.get("/", async(req, res) => {
 
-    res.setHeader('Access-Control-Allow-Origin', '*');
-    //res.setHeader('Access-Control-Allow-Methods', 'GET, POST, OPTIONS, PUT, PATCH, DELETE'); // If needed
-    //res.setHeader('Access-Control-Allow-Headers', 'X-Requested-With,content-type'); // If needed
-    //res.setHeader('Access-Control-Allow-Credentials', true); // If needed
-
-    res.send('cors problem fixed:)');
     const { page = 1, limit = 20, search = "" } = req.query;
     const offset = (page - 1) * limit;
 
