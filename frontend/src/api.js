@@ -1,7 +1,7 @@
 import axios from "axios";
 
 const api = axios.create({
-    baseURL: "http://localhost:8080/api/contacts",
+    baseURL: "https://intellewings-assignment-pobb.onrender.com/api/contacts",
 });
 
 export const fetchContacts = async() => api.get("/");
